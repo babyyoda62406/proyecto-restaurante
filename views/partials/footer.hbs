@@ -1,0 +1,159 @@
+<footer class="site-footer section-padding">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-    2">
+                <h4 class="text-white mb-4 me-5">Crispy Kitchen</h4>
+            </div>
+
+            <div class="col-lg-4 col-md-7 col-xs-12 tooplate-mt30">
+                <h6 class="text-white mb-lg-4 mb-3">Localización</h6>
+
+                <p>Esquina de tejas /E Infanta y Cruz del Padre, Habana, Cuba</p>
+
+                <a href="https://goo.gl/maps/wZVGLA7q64uC1s886" class="custom-btn btn btn-dark mt-2">Dirección</a>
+            </div>
+
+            <div class="col-lg-4 col-md-5 col-xs-12 tooplate-mt30">
+                <h6 class="text-white mb-lg-4 mb-3">Horas de apertura</h6>
+
+                <p class="mb-2">Lunes - viernes</p>
+
+                <p>6:00 AM - 08:00 PM</p>
+
+                <p>Tel: <a href="tel: 010-02-0340" class="tel-link">010-02-0340</a></p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-xs-12 tooplate-mt30">
+                <h6 class="text-white mb-lg-4 mb-3">Social</h6>
+
+                <ul class="social-icon">
+                    <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+
+                    <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                    <li><a href="#" class="social-icon-link bi-twitter"></a></li>
+
+                    <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+                </ul>
+
+                <p class="copyright-text tooplate-mt60">Copyright © 2022 .
+                    <br>Design: <a rel="nofollow" href="https://www.tooplate.com/" target="_blank">Tooplate</a>
+                </p>
+
+            </div>
+
+        </div><!-- row ending -->
+
+    </div><!-- container ending -->
+
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="BookingModal" tabindex="-1" aria-labelledby="BookingModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="mb-0">Tabla de reservacion</h3>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body d-flex flex-column justify-content-center">
+                <div class="booking">
+
+                    <form class="booking-form row" id="formReservar" role="form" action="reservar" method="post">
+                        <div class="col-lg-6 col-12">
+                            <label for="name" class="form-label">Nombre completo</label>
+
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Su nombre"
+                                required>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <label for="email" class="form-label">Direccion de correo</label>
+
+                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
+                                placeholder="your@email.com">
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <label for="phone" class="form-label">Número de telefono</label>
+
+                            <input type="telephone" name="phone" id="phone" class="form-control"
+                                placeholder="+53 58831892" required>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <label for="people" class="form-label">Cantidad de personas</label>
+
+                            <input type="number" name="people" id="people" required class="form-control" placeholder="12">
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <label for="date" class="form-label">Fecha</label>
+
+                            <input type="date" require name="date" id="date" value="" class="form-control">
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <label for="time" class="form-label">Hora</label>
+                            <div class="ctRow">
+                                <input type="time" name="timeN" id="timeN"    class="form-control">
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-12">
+                            <label for="message" class="form-label">Pedido especial</label>
+
+                            <textarea class="form-control" rows="4" id="message" name="message"
+                                placeholder=""></textarea>
+                        </div>
+
+                        <div class="col-lg-4 col-12 ms-auto">
+                            <button type="submit" class="form-control">Reservar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="modal-footer"></div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content mdlogin">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Inserte sus credenciales</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <link rel="stylesheet" href="css/css_uiverse.io.css">
+                <form action="/login" method="post" enctype="application/x-www-form-urlencoded" class="loginContainer">
+                    <input placeholder="Usuario" type="text" class="input" id="ipNameAdmin" name="ipNameAdmin"
+                        required="">
+                    <input placeholder="Contrase&ntilde;a" type="password" class="input" name="ipKeyAdmin"
+                        id="ipKeyAdmin" required="">
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- JAVASCRIPT FILES -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/index.js"></script>

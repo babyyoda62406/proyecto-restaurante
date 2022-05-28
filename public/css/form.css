@@ -1,0 +1,76 @@
+.form-clm{
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+}
+
+.ctrow{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3px;
+}
+.clItem{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.clItem > input.chbx{
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+.clItem > div{
+    margin-left: 12px;
+}
+
+.chgroup{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+.ctrow > div{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.ctrow > div > *{  
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.img_delete{
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+}
+
+#ctPlate{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start ;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+}
+
+.ctMDL{
+    width: max-content;
+    margin: 5px;
+}

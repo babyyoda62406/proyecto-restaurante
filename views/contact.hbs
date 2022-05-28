@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Crispy Kitchen - Contacto</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">                
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css">
+<!--
+
+Tooplate 2129 Crispy Kitchen
+
+https://www.tooplate.com/view/2129-crispy-kitchen
+
+-->
+    </head>
+    
+    <body>
+        
+       {{> head }}
+        <main>
+
+            <header class="site-header site-contact-header">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-10 col-12 mx-auto">
+                            <h1 class="text-white">Contacta con nosotros</h1>
+
+                            <strong class="text-white">Dinos como podemos ayudarte</strong>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="overlay"></div>
+            </header>
+
+            <section class="contact section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <h2 class="mb-4">Deje un mensaje</h2>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <form class="custom-form contact-form row" id="formContact" action="/contactMSG" method="post" role="form">
+                                <div class="col-lg-6 col-6">
+                                    <label for="contact-name" class="form-label">Nombre completo</label>
+                                    <input type="text" name="contact_name" id="contact-name" class="form-control" placeholder="Su Nombre" required>
+                                </div>
+
+                                <div class="col-lg-6 col-6">
+                                    <label for="contact-phone" class="form-label">Teléfono</label>
+
+                                    <input type="telephone" name="contact_phone" id="contact-phone"  class="form-control" placeholder="+53 58831892" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="contact-email" class="form-label">Email</label>
+
+                                    <input type="email" name="contact_email" id="contact-email"  class="form-control" placeholder="babayyoda62406@gmail.com" required>
+
+                                    <label for="contact_message" class="form-label">Mensaje</label>
+
+                                    <textarea class="form-control" rows="10" id="contact_message" name="contact_message" placeholder="Cuerpo del Mensaje" required></textarea>
+                                </div>
+
+                                <div class="col-lg-5 col-12 ms-auto">
+                                    <button type="submit" class="form-control">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-lg-4 col-12 mx-auto mt-lg-5 mt-4">
+
+                            <h5>Entre semana</h5>
+
+                            <div class="d-flex mb-lg-3">
+                                <p>Lunes a Viernes</p>
+
+                                <p class="ms-5">10:00 AM - 08:00 PM</p>
+                            </div>
+
+                            <h5>Fin de semana</h5>
+
+                            <div class="d-flex">
+                                <p>Sabado y Domingo</p>
+
+                                <p class="ms-5">11:00 AM - 11:00 PM</p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        {{> footer}}
+    </body>
+</html>

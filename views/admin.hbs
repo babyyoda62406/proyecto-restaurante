@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Administrar</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/css_uiverse.io.css">
+    <link rel="stylesheet" href="css/index.css">
+
+
+    <!--
+
+Tooplate 2129 Crispy Kitchen
+
+https://www.tooplate.com/view/2129-crispy-kitchen
+
+-->
+</head>
+
+<body>
+
+    <nav class="navbar  navbar-expand-lg bg-white shadow-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">
+                Secccion Administrativa
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Ir al sitio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Agregar plato
+                        </a>
+                        {{!-- modal in footer--}}
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="showMSG" href="#">Mensajes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="showReserve" href="#">Reservaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/">Salir</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <header class="site-header site-menu-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-12 mx-auto">
+                        <h1 class="text-white"> {{admin}} </h1>
+                        <strong class="text-white">Gestiona tu restaurante desde la comodidad de tu hogar</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </header>
+
+        <section class="menu section-padding">
+            <div class="container">
+                <div class="col-12">
+                    <h2 class="mb-lg-5 mb-4">Desayuno</h2>
+                </div>
+                <div class="rowme" id="ctDSY">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="menu section-padding bg-white">
+            <div class="container">
+                <div class="col-12">
+                    <h2 class="mb-lg-5 mb-4">Almuerzo</h2>
+                </div>
+                <div class="rowme" id="ctALZ">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="menu section-padding">
+            <div class="container">
+                <div class="col-12">
+                    <h2 class="mb-lg-5 mb-4">Comida</h2>
+                </div>
+                <div class="rowme" id="ctCDM">
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="site-footer section-padding">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12">
+                    <h4 class="text-white mb-4 me-5">Nombre del restaurante</h4>
+                </div>
+
+                <div class="col-lg-4 col-md-7 col-xs-12 tooplate-mt30">
+                    <h6 class="text-white mb-lg-4 mb-3">Location</h6>
+
+                    <p>121 Einstein Loop N, Bronx, NY 10475, United States</p>
+
+                    <a href="https://goo.gl/maps/wZVGLA7q64uC1s886" class="custom-btn btn btn-dark mt-2">Directions</a>
+                </div>
+
+                <div class="col-lg-4 col-md-5 col-xs-12 tooplate-mt30">
+                    <h6 class="text-white mb-lg-4 mb-3">Opening Hours</h6>
+
+                    <p class="mb-2">Monday - Friday</p>
+
+                    <p>10:00 AM - 08:00 PM</p>
+
+                    <p>Tel: <a href="tel: 010-02-0340" class="tel-link">010-02-0340</a></p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-xs-12 tooplate-mt30">
+                    <h6 class="text-white mb-lg-4 mb-3">Social</h6>
+
+                    <ul class="social-icon">
+                        <li><a href="#" class="social-icon-link bi-facebook"></a></li>
+
+                        <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                        <li><a href="#" class="social-icon-link bi-twitter"></a></li>
+
+                        <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+                    </ul>
+
+                    <p class="copyright-text tooplate-mt60">Copyright © 2022 Crispy Kitchen Co., Ltd.
+                        <br>Design: <a rel="nofollow" href="https://www.tooplate.com/" target="_blank">Tooplate</a>
+                    </p>
+
+                </div>
+
+            </div><!-- row ending -->
+
+        </div><!-- container ending -->
+
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalNotePad" tabindex="-1" aria-labelledby="modalNotePad" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="mb-0" id="tbTitle">Tareas pendientes </h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body d-flex flex-column justify-content-center table-responsive">
+                    <table class="table" id="tbScreen">
+                       
+                    </table>
+                </div>
+
+                <div class="modal-footer"></div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mEditableTitle">Agregar plato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="mdEditable">
+                    <!--Agregar  Plato Inicio-->
+                    <form id="formAddPlate" class="needs-validation form-clm" enctype="multipart/form-data" novalidate>
+                        <div class="ctrow">
+                            <div class="clItem">Hora del dia</div>
+                            <div class="clItem chgroup">
+                                <div class="clItem">
+                                    <input class="chbx" type="checkbox" name="ipDesayuno" id="ipDesayuno">
+                                    <div>Desayuno</div>
+                                </div>
+                                <div class="clItem">
+                                    <input class="chbx" type="checkbox" name="ipAlmuerzo" id="ipAlmuerzo">
+                                    <div>Almuerzo</div>
+                                </div>
+                                <div class="clItem">
+                                    <input class="chbx" type="checkbox" name="ipComida" id="ipComida">
+                                    <div>Comida</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ctrow">
+                            <div class="clItem">Nombre: </div>
+                            <div class="clItem">
+                                <input type="text" class="input" required id="ipNamePlate" name="ipNamePlate" />
+                            </div>
+                        </div>
+
+                        <div class="ctrow">
+                            <div class="clItem">Precio: </div>
+                            <div class="clItem">
+                                <input type="number" required class="input" id="ipPricePlate" name="ipPricePlate" />
+                            </div>
+                        </div>
+
+                        <div class="ctrow">
+                            <div class="clItem">Imagen: </div>
+                            <div class="clItem">
+                                <input type="file" required class="input" id="ipCoverPlate" name="ipCoverPlate" />
+                            </div>
+                        </div>
+
+
+
+                    </form>
+                    <script>
+                        // Example starter JavaScript for disabling form submissions if there are invalid fields
+                        (function () {
+                            'use strict';
+                            window.addEventListener('load', function () {
+                                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                var forms = document.getElementsByClassName('needs-validation');
+                                // Loop over them and prevent submission
+                                var validation = Array.prototype.filter.call(forms, function (form) {
+                                    form.addEventListener('submit', function (event) {
+                                        if (form.checkValidity() === false) {
+                                            event.preventDefault();
+                                            event.stopPropagation();
+                                        }
+                                        form.classList.add('was-validated');
+                                    }, false);
+                                });
+                            }, false);
+                        })();
+                    </script>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button id="btAddPlate" type="button" data-bs-dismiss="modal"
+                            class="btn btn-primary">Aceptar</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="toast">
+        <div class="toast-header d-flex">
+            <div class="rounder " style="height: 16px;width: 16px;background-color: antiquewhite ;"></div>
+            <strong id="toastTitle" class="mr-auto">Título de la notificación</strong>
+            <small id="labelDate">03:03:2002</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body " id="toastBody">
+            Texto , aqui va el mensaje
+        </div>
+    </div>
+
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>

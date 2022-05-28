@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title> {{Nombre_Restaurante}} </title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <!--
+
+Tooplate 2129 Crispy Kitchen
+
+https://www.tooplate.com/view/2129-crispy-kitchen
+
+-->
+</head>
+
+<body>
+
+    {{> head}}
+
+    <main>
+        <header class="site-header site-menu-header">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-10 col-12 mx-auto">
+                        <h1 class="text-white"> {{ Nombre_Restaurante}} </h1>
+                        <strong class="text-white">Desayuna, Almuerza o come desde la comodidad de tu hogar</strong>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="overlay"></div>
+        </header>
+        
+        <section class="menu section-padding">
+            <div class="container">
+                <div class="col-12">
+                    <h2 class="mb-lg-5 mb-4">Desayuno</h2>
+                 </div>
+                <div class="rowme" id="ctDSY">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="menu section-padding bg-white">
+            <div class="container">
+                <div class="col-12">
+                        <h2 class="mb-lg-5 mb-4">Almuerzo</h2>
+                </div>
+                <div class="rowme"  id="ctALZ">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="menu section-padding">
+            <div class="container">
+                <div class="col-12">
+                        <h2 class="mb-lg-5 mb-4">Comida</h2>
+                </div>
+                <div class="rowme" id="ctCDM">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    {{> footer}}
+    <script>
+        loadView()
+    </script>
+</body>
+
+</html>

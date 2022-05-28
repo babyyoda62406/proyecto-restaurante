@@ -1,0 +1,85 @@
+.ctCard > div > img{
+   
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.ctCard {
+    display: flex;
+    flex-direction: column;
+
+}
+.ctCard .ctRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.ctCard .jr{
+    justify-content: flex-end;
+}
+
+.ctCard .jr > button{
+    margin-left: 5px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.rowme{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-y: scroll;
+}
+
+.rowme img{
+    margin-left: 15px;
+}
+
+
+tbody{
+    overflow: scroll;
+}
+
+.toast{
+    position: fixed;
+    top: 5% ; 
+    z-index: 1056;
+    left: 50%; 
+    margin-left: -175px;
+    font-size: 20px;
+}
+
+.toast-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.toast-body{
+    background-color: antiquewhite;
+    overflow: scroll;
+}
+.btCtn{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 425px) {
+    #ctMedia{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: fixed;
+        bottom: 2px;
+    }
+    
+}
+
